@@ -1,7 +1,9 @@
-* {
+html, body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
-
 body {
   font-family: "Bangers", system-ui;
 
@@ -60,17 +62,13 @@ video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  /* Ensures video covers the area without distortion */
   transform: translate(-50%, -50%);
-  /* Centers the video */
   z-index: -1;
-  /* Places video behind content */
 }
 
 .content {
   position: relative;
   z-index: 1;
-  /* Brings content above the video */
   color: white;
   text-align: center;
   padding: 20px;
@@ -85,7 +83,7 @@ video {
 .cards {
   text-align: center;
   margin-top: 20px;
-  height: 250px;
+  height: 300px;
   width: 250px;
   border: solid rgb(179, 175, 175) 1px;
 }
